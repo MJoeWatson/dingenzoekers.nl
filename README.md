@@ -1,1 +1,1 @@
-# dingerzoekers.nl
+# dingenzoekers.nl
