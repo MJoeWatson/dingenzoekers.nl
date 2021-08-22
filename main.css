@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Natural';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("JosefinSans-Light.ttf")  format('truetype');
+}
+
+body, html {
+  font-family: "Natural"
+
+}
+
+body {
+  background-color: #fce373ff;
+}
+
+p {
+  line-height: 3.5vh;
+  font-size: 20px;
+}
+
+figcaption {
+  font-size: 15px;
+  line-height: 2vh;
+  margin-top: 1vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-right: 3vw;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 5vh;
+}
+
+.flex-item {
+  padding: 5px;
+  width: 45%;
+  height: 40vh;
+  margin-top: 10px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+#house {
+  background: #a385bdff;
+  display: flex;
+  height: fit-content;
+  margin: auto;
+  display: block;
+  text-align: center;
+  line-height: 8vh;
+}
+
+#help {
+  border-style: solid;
+  margin-top: 10vh;
+  margin-right: 2vh;
+  padding-left: 2vh;
+  height: fit-content;
+}
+
+#times {
+  text-align: center;
+  font-size: 25px;
+  align-self: center;
+}
+
+#content {
+  margin-left: 3%;
+  font-size: 15px;
+}
+
+#circle {
+  width:60vh;
+  height:60vh;
+  position:fixed;
+  background-color:#9cd08eff;
+  border-radius:20pc;
+  right:-15vh;
+  top:-10vh;
+  z-index:-1;
+}
+
+#logo {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+#address {
+  text-align: end;
+  width: 30%;
+  margin-top: 5vh;
+}
+
+#styles {
+  font-size: 1.3vw;
+  width: 30%;
+  font-weight: bold;
+  font-style: italic;
+  margin: inherit;
+}
+
+
+#kijksmall {
+  display: none;
+}
+
+#blockcircle {
+  width:60vh;
+  height:60vh;
+  position:fixed;
+  background-color:#f89f4dff;
+  border-radius:20pc;
+  left:0;
+  top:10vh;
+  z-index:-1;
+}
+
+#blockrect {
+  width:60vh;
+  height:60vh;
+  position:fixed;
+  background-color:#f89f4dff;
+  left:0;
+  top:40vh;
+  z-index:-1;
+  height:100%;
+}
+
+@media only screen and (max-width: 600px) {
+  figcaption {
+    font-size: 1.7vh;
+  }
+  #styles {
+    display: none
+  }
+  #header {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+
+  #logo {
+    margin: 0;
+    width: 55%;
+    font-size: 1.8vh;
+  }
+  #address {
+    width: 45%;
+    margin-top: 1vh;
+  }
+  #times {
+    order: 1;
+    width: 100%;
+  }
+  #house {
+    order: 2;
+    width: 100%;
+  }
+  #contact {
+    order: 4;
+    width: 100%;
+    height: fit-content;
+  }
+
+  h1  {
+    height: 40px;
+    margin: 0;
+    font-size: 4.7vh;
+  }
+  #help {
+    order: 5;
+    width: 100%;
+  }
+  #content {
+    margin-top: 0;
+  }
+
+  .flex-item {
+    margin-bottom: 1vh;
+    height: 24vh;
+  }
+
+  #kijksmall {
+    display: block;
+    order: 3;
+    text-align: center;
+
+    align-self: center;
+    margin-top: 2vh;
+    font-size: 2.3vh;
+  }
+
+  #kijklarger {
+    display: none;
+  }
+
+  p {
+    font-size: 2.7vh;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  #circle {
+    width:75vw;
+    height:75vw;
+  }
+
+  #blockcircle {
+    top:15vh;
+  }
+
+  #blockrect {
+    top:45vh;
+  }
+
+}
