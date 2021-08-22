@@ -3,7 +3,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: url("JosefinSans-Light.ttf")  format('truetype');
+  src: url("JosefinSans-Light.woff2")  format('woff2');
 }
 
 body, html {
